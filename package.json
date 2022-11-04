@@ -1,5 +1,5 @@
 {
-  "name": "invoice-app-backend",
+  "name": "ts-express-starter",
   "version": "1.0.0",
   "main": "src/app.ts",
   "scripts": {
