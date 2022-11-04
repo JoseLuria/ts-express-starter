@@ -7,9 +7,9 @@ export const registerUser = catchAsync(
   async (req: Request, res: Response, _next: NextFunction) => {
     const { email, password } = req.body;
 
-    const userWithEmail = await UserModel.findOne({ email });
+    const userExist = await UserModel.findOne({ email });
 
-    if (userWithEmail) {
+    if (userExist) {
       throw new AppError(400, "There is already a user with this email");
     }
 
