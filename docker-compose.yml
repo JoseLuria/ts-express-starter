@@ -1,0 +1,8 @@
+services:
+  audiophiledb:
+    image: mongo
+    container_name: audiophile-database
+    ports:
+      - 27017:27017
+    volumes:
+      - ./database:/data/db
